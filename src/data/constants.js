@@ -200,7 +200,7 @@ export const education = [
     img: "https://aladekhar-realestate.com/wp-content/uploads/2018/02/CAMBRIDGE-INTERNATIONAL.png",
     school: "Cambridge International School for Girls",
     date: "Apr 2020 - Apr 2021",
-    grade: "8%",
+    grade: "85%",
     desc: "I completed my class 12 high school education at Cambridge International School for Girls, Jalandhar, where I studied PCMB.",
     degree: "Senior Secondary, CBSE ",
   },
