@@ -40,7 +40,7 @@ const Wrapper = styled.div`
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
       <Navbar />
       <Body>
         <StarsCanvas />
