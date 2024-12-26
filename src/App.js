@@ -8,6 +8,7 @@ import Skills from "./components/sections/skills";
 import Experience from "./components/sections/Experience";
 import Education from "./components/sections/Education";
 import StarsCanvas from "./components/canvas/Stars";
+import Contact from "./components/sections/contact";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -18,6 +19,23 @@ const Body = styled.div`
   position: relative;
 `;
 
+const Wrapper = styled.div`
+  padding-bottom: 100px;
+  background: linear-gradient(
+      38.73deg,
+      rgba(204, 0, 187, 0.15) 0%,
+      rgba(201, 32, 184, 0) 50%
+    ),
+    linear-gradient(
+      141.27deg,
+      rgba(0, 70, 209, 0) 50%,
+      rgba(0, 70, 209, 0.15) 100%
+    );
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
+`;
+
+
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
@@ -27,11 +45,18 @@ function App() {
         <StarsCanvas />
         <div>
         <About />
-        <Skills />
-        <Experience />
-        <Education />
-        </div>
-      </Body>
+        <Wrapper>
+              <Skills />
+              <Experience />
+            </Wrapper>
+            {/* <Projects /> */}
+            <Wrapper>
+              <Education />
+               <Contact />
+            </Wrapper>
+            {/* <Footer /> */}
+          </div>
+        </Body>
       </BrowserRouter>
     </ThemeProvider>
   );
