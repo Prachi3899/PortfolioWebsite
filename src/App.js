@@ -47,8 +47,8 @@ function App() {
         <div>
         <About />
         <Wrapper>
-              <Skills />
               <Experience />
+              <Skills />
             </Wrapper>
             {/* <Projects /> */}
             <Wrapper>

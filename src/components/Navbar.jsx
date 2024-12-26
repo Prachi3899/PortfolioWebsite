@@ -60,7 +60,19 @@ const Navlink = styled.a`
     }
 `;
 
-const ButtonContainer = styled.div`
+const ButtonContainer1 = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6px;
+    height: 100%;
+    width: 80%;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
+const ButtonContainer2 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +85,25 @@ const ButtonContainer = styled.div`
 `;
 
 const GithubButton = styled.a`
+    border: 1px solid ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.primary};
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.6s ease-in-out;
+    text-decoration: none;
+    &:hover {
+        background: ${({ theme }) => theme.primary};
+        color: ${({ theme }) => theme.text_primary};
+    }
+`;
+
+const LinkedInButton = styled.a`
     border: 1px solid ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.primary};
     justify-content: center;
@@ -173,13 +204,27 @@ const Navbar = () => {
                       >
                         Github Profile
                       </GithubButton>
+                      <LinkedInButton
+                        href={Bio.linkedin}
+                        target="_Blank"
+                        style={{
+                          background: theme.primary,
+                          color: theme.text_primary,
+                        }}
+                      >
+                        LinkedIn Profile
+                      </LinkedInButton>
                     </MobileMenu>
                   )
             }
 
-            <ButtonContainer>
+            <ButtonContainer1>
                 <GithubButton href={Bio.github} target="_Blank">Github Profile</GithubButton>
-            </ButtonContainer>
+            </ButtonContainer1>
+
+            <ButtonContainer2>
+                <LinkedInButton href={Bio.linkedin} target="_Blank">LinkedIn Profile</LinkedInButton>
+            </ButtonContainer2>
         </NavbarContainer>
         </Nav>
     )
