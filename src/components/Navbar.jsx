@@ -122,7 +122,9 @@ const MobileIcon = styled.div`
     }
 `;
 
-const MobileMenu = styled.ul`
+const MobileMenu = styled.ul.withConfig({
+    shouldForwardProp: (prop) => prop !== 'isopen',  
+})`
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -137,23 +139,23 @@ const MobileMenu = styled.ul`
     top: 80px;
     right: 0;
     transition: all 0.6s ease-in-out;
-    transform: ${({ isOpen }) =>
-        isOpen ? "translateY(0)" : "translateY(-100%)"};
+    transform: ${({ isopen }) =>
+        isopen ? "translateY(0)" : "translateY(-100%)"};
     border-radius: 0 0 20px 20px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-    z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
+    opacity: ${({ isopen }) => (isopen ? "100%" : "0")};
+    z-index: ${({ isopen }) => (isopen ? "1000" : "-1000")};
 `;
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isopen, setIsopen] = useState(false);
     const theme = useTheme();
     return (
         <Nav>
         <NavbarContainer>
             <Navlogo to="/">Portfolio</Navlogo>
 
-            <MobileIcon onClick={() => setIsOpen(!isOpen)}>
+            <MobileIcon onClick={() => setIsopen(!isopen)}>
                 <MenuRounded style={{ color: "inherit"}}/>
             </MobileIcon>
 
@@ -166,21 +168,21 @@ const Navbar = () => {
             </NavItems>
 
             {
-                isOpen && (
-                    <MobileMenu isOpen={isOpen}>
-                      <Navlink onClick={() => setIsOpen(!isOpen)} href="#About">
+                isopen && (
+                    <MobileMenu isopen={isopen}>
+                      <Navlink onClick={() => setIsopen(!isopen)} href="#About">
                         About
                       </Navlink>
-                      <Navlink onClick={() => setIsOpen(!isOpen)} href="#Experience">
+                      <Navlink onClick={() => setIsopen(!isopen)} href="#Experience">
                         Experience
                       </Navlink>
-                      <Navlink onClick={() => setIsOpen(!isOpen)} href="#Skills">
+                      <Navlink onClick={() => setIsopen(!isopen)} href="#Skills">
                         Skills
                       </Navlink>
                             {/* <Navlink onClick={() => setIsOpen(!isOpen)} href="#Projects">
                                 Projects
                         </Navlink> */}
-                      <Navlink onClick={() => setIsOpen(!isOpen)} href="#Education">
+                      <Navlink onClick={() => setIsopen(!isopen)} href="#Education">
                         Education
                       </Navlink>
                       <GithubButton
