@@ -6,6 +6,8 @@ import { BrowserRouter } from "react-router-dom";
 import About from "./components/sections/about";
 import Skills from "./components/sections/skills";
 import Experience from "./components/sections/Experience";
+import Education from "./components/sections/Education";
+import StarsCanvas from "./components/canvas/Stars";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -22,9 +24,13 @@ function App() {
       <BrowserRouter>
       <Navbar />
       <Body>
+        <StarsCanvas />
+        <div>
         <About />
         <Skills />
         <Experience />
+        <Education />
+        </div>
       </Body>
       </BrowserRouter>
     </ThemeProvider>
