@@ -60,24 +60,13 @@ const Navlink = styled.a`
     }
 `;
 
-const ButtonContainer1 = styled.div`
+const ButtonContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 6px;
     height: 100%;
-    width: 80%;
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-`;
-
-const ButtonContainer2 = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 6px;
-    height: 100%;
+    gap: 16px;
     width: 80%;
     @media screen and (max-width: 768px) {
         display: none;
@@ -218,13 +207,10 @@ const Navbar = () => {
                   )
             }
 
-            <ButtonContainer1>
+            <ButtonContainer>
                 <GithubButton href={Bio.github} target="_Blank">Github Profile</GithubButton>
-            </ButtonContainer1>
-
-            <ButtonContainer2>
                 <LinkedInButton href={Bio.linkedin} target="_Blank">LinkedIn Profile</LinkedInButton>
-            </ButtonContainer2>
+            </ButtonContainer>
         </NavbarContainer>
         </Nav>
     )
