@@ -9,6 +9,7 @@ import Experience from "./components/sections/Experience";
 import Education from "./components/sections/Education";
 import StarsCanvas from "./components/canvas/Stars";
 import Contact from "./components/sections/contact";
+import Footer from "./components/sections/footer";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -39,7 +40,7 @@ const Wrapper = styled.div`
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar />
       <Body>
         <StarsCanvas />
@@ -54,7 +55,7 @@ function App() {
               <Education />
                <Contact />
             </Wrapper>
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </Body>
       </BrowserRouter>
