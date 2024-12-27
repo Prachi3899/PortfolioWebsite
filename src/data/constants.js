@@ -172,7 +172,7 @@ export const experiences = [
     img: "https://coincent.ai/microsoft-certification/internship/images/Worinwell.png",
     role: "Developer Intern",
     company: "WorinWell",
-    date: "Aug 2022 - Sep 2021",
+    date: "Aug 2022 - Sep 2022",
     desc: "Had a very amazing experience during the internship, which helped me grow my skills in the eld of HTML,CSS and PHP Coded websites using HTML, CSS, and PHP languages. Oversaw back-end development using PHP to maintain website integrit",
     skills: [
       "HTML",
