@@ -191,7 +191,7 @@ export const education = [
     img: "https://alchetron.com/cdn/dav-institute-of-engineering-and-technology-e2096d3a-deef-47f6-9a61-2a814083ef6-resize-750.jpg",
     school: "DAV Institue of Engineering and Technology",
     date: "Oct 2021 - June 2025",
-    grade: "8.1 CGPA",
+    grade: "8.3 CGPA",
     desc: "I am currently pursuing a Bachelor's degree in Information Technology. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
     degree: "Bachelor of Technology - BTech, Information Technology",
   },
