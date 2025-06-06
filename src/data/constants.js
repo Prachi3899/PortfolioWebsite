@@ -197,7 +197,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://aladekhar-realestate.com/wp-content/uploads/2018/02/CAMBRIDGE-INTERNATIONAL.png",
+    img: "https://www.joonsquare.com/usermanage/image/business/cambridge-international-school-for-girls-jalandhar-3421/cambridge-international-school-for-girls-jalandhar-logo.jpg",
     school: "Cambridge International School for Girls",
     date: "Apr 2020 - Apr 2021",
     grade: "85%",
@@ -206,7 +206,7 @@ export const education = [
   },
   {
     id: 2,
-    img: "https://aladekhar-realestate.com/wp-content/uploads/2018/02/CAMBRIDGE-INTERNATIONAL.png",
+    img: "https://www.joonsquare.com/usermanage/image/business/cambridge-international-school-for-girls-jalandhar-3421/cambridge-international-school-for-girls-jalandhar-logo.jpg",
     school: "Cambridge International School for Girls",
     date: "Apr 2018 - Apr 2019",
     grade: "96.2%",
