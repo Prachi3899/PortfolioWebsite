@@ -141,7 +141,7 @@ export const experiences = [
     role: "Intern",
     company: "ST Microelectronics",
     date: "July 2024 - Present",
-    desc: "",
+    desc: "Part of the ERP HR team focused on digitizing employee support systems. Contributed to migrating legacy tools to ServiceNow by rebuilding key internal applications. Gained in-depth knowledge of the ServiceNow platform and earned the System Administrator certification.Collaborated with cross-functional teams to streamline HR workflows and enhance user experience through automation and low-code development.",
     skills: [
       "Servicenow",
       "Angular",
