@@ -9,7 +9,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/prachi3899",
   resume:
-    "https://drive.google.com/file/d/1F9mF1gKufQdXXbZfHoLFHRspwsaJexpg/view?usp=drive_link",
+    "https://drive.google.com/file/d/1r1jD0WwoIodx4HcDd9fBP7lH2uVntT8S/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/prachi-gupta-3635b1259",
   twitter: "https://x.com/prachigupta3899",
   insta: "https://www.instagram.com/prachigupta3899",
